@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/3c9827ad2b.js" crossorigin="anonymous"></script>
+
+
+  <title>MockCal| A minimilistic, calculator</title>
+</head>
+<body>
+  <header>
+    <div id="head"><i id="log"class="fa-solid fa-calculator fa-2xl" style="color: #e5bc2a;"></i>
+    <div id="logo">MockCal</div>
+  </div>
+  </header>
+  <main>
+   
+      <div id="calculator">
+        <input id="input-box" type="text" placeholder="Results" readonly>
+      <div id="no-bx">
+        <button class="btn" id="b2" onclick="current_display=''; document.querySelector('#input-box').value=current_display;">C</button>
+        <button class="btn" id="b3"  onclick="current_display=current_display + 1; document.querySelector('#input-box').value=current_display;">1</button>
+        <button class="btn" id="b1"  onclick="current_display=current_display +2; document.querySelector('#input-box').value=current_display;">2</button>
+        <button class="btn" id="b4"  onclick="current_display=current_display +'+'; document.querySelector('#input-box').value=current_display;">+</button>
+        <button class="btn" id="b5" onclick="current_display=current_display +'3'; document.querySelector('#input-box').value=current_display;">3</button>
+        <button class="btn" id="b6" onclick="current_display=current_display +'4'; document.querySelector('#input-box').value=current_display;">4</button>
+        <button class="btn" id="b7" onclick="current_display=current_display +'-'; document.querySelector('#input-box').value=current_display;">-</button>
+        <button class="btn" id="b8" onclick="current_display=current_display +'5'; document.querySelector('#input-box').value=current_display;">5</button>
+        <button class="btn" id="b9" onclick="current_display=current_display +'6'; document.querySelector('#input-box').value=current_display;">6</button>
+        <button class="btn" id="b10"  onclick="current_display=current_display +'*'; document.querySelector('#input-box').value=current_display;">*</button>
+        <button class="btn" id="b11"  onclick="current_display=current_display +'7'; document.querySelector('#input-box').value=current_display;">7</button>
+        <button class="btn" id="b12"  onclick="current_display=current_display +'8'; document.querySelector('#input-box').value=current_display;">8</button>
+        <button class="btn" id="b13"  onclick="current_display=current_display +'/'; document.querySelector('#input-box').value=current_display;">/</button>
+        <button class="btn" id="b14"   onclick="current_display=eval(current_display); document.querySelector('#input-box').value=current_display;">=</button>
+        <button class="btn" id="b15"  onclick="current_display=current_display +'9'; document.querySelector('#input-box').value=current_display;">9</button>
+        <button class="btn" id="b16"  onclick="current_display=current_display +'0'; document.querySelector('#input-box').value=current_display;">0</button>
+        <button class="btn" id="b17"  onclick="current_display=current_display +'.'; document.querySelector('#input-box').value=current_display;">.</button>
+      </div>
+      </div>
+
+    
+    
+  </main>
+  <script>
+    let current_display=''
+    document.querySelector('#input-box').value=current_display;
+  </script>
+</body>
+</html>
